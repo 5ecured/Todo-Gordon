@@ -1,0 +1,32 @@
+<!-- This is the most basic version. Straight from WatchAndCode -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first app</title>
+</head>
+
+<body>
+	<div>
+		<button onclick='handlers.addTodo()'>Add</button>
+		<input type='text' id='addInput'>
+	</div>
+	<div>
+		<button onclick='handlers.changeTodo()'>Change</button>
+		<input type='number' id='changeNumber'>
+		<input type='text' id='changeText'>
+	</div>
+	<div>
+		<button onclick='handlers.toggleCompleted()'>Toggle</button>
+		<input type='number' id='toggleInput'>
+	</div>
+	<div>
+		<button onclick='handlers.toggleAll()'>Toggle All</button>
+	</div>
+
+	<ul>
+	</ul>
+
+	<script src='script.js'></script>
+</body>
+</html>

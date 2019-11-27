@@ -1,0 +1,36 @@
+<!-- This is version 1. New features: 
+- pressing enter in input area is equivalent to clicking the button
+- clicking a todo item toggles it which means the toggle button is removed -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first app</title>
+</head>
+
+<body>
+	<div>
+		<h3>Add a todo:</h3>
+		<input type='text' id='addInput'>
+		<button onclick='handlers.addTodo()' id='addButton'>Add</button>
+	</div>
+	<div>
+		<h3>Change a todo:</h3>
+		Position:
+		<input type='number' id='changeNumber'>
+	</div>
+	<div>
+		Change to:
+		<input type='text' id='changeText'>
+		<button onclick='handlers.changeTodo()' id='changeButton'>Change</button>
+	</div>
+	<div>
+		<h3>Click on a todo to toggle or <button onclick='handlers.toggleAll()'>Toggle all</button></h3>
+	</div>
+
+	<ul>
+	</ul>
+
+	<script src='script.js'></script>
+</body>
+</html>
